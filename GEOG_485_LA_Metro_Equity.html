@@ -471,11 +471,12 @@ document.getElementById('refresh-link').addEventListener('click', e => {
             document.getElementById('juris-value').innerText = properties.City_Commu || 'N/A';
             document.getElementById('pop-value').innerText = properties.Tot_Pop || 'N/A';
             document.getElementById('no-veh-rate').innerText = `${properties.Rate_NoVeh || 0}%`;
+            document.getElementById('juris-value').style.fontSize='x-large';
 
             // Format MENI_Tier value to appear one word per line
             const meniTierFormatted = (properties.MENI_Tier || 'N/A').split(' ').join('<br>');
             document.getElementById('meni-tier').innerHTML = meniTierFormatted; // Use innerHTML to render <br>
-            document.getElementById('meni-tier').style.fontSize='x-large'
+            document.getElementById('meni-tier').style.fontSize='x-large';
 
             barChart.setOption({ 
                 series: [{ 
