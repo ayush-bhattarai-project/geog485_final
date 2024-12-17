@@ -472,6 +472,8 @@ document.getElementById('refresh-link').addEventListener('click', e => {
             document.getElementById('pop-value').innerText = properties.Tot_Pop || 'N/A';
             document.getElementById('no-veh-rate').innerText = `${properties.Rate_NoVeh || 0}%`;
             document.getElementById('juris-value').style.fontSize='x-large';
+            document.getElementById('pop-value').style.fontSize='x-large';
+            document.getElementById('no-veh-rate').style.fontSize='x-large';
 
             // Format MENI_Tier value to appear one word per line
             const meniTierFormatted = (properties.MENI_Tier || 'N/A').split(' ').join('<br>');
